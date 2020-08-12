@@ -1,0 +1,27 @@
+{
+  "name": "pug-starter-kit",
+  "version": "1.0.0",
+  "description": "Шаблон проекта для быстрого старта с webpack, pug и scss",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimktsoy/pug-starter-kit.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "webpack",
+    "pug",
+    "scss"
+  ],
+  "author": "Dima Tsoy <dimktsoy@yahoo.com> (https://github.com/dimktsoy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimktsoy/pug-starter-kit/issues"
+  },
+  "homepage": "https://github.com/dimktsoy/pug-starter-kit#readme"
+}
