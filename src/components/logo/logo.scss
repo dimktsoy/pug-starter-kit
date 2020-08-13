@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &__image {
+    display: block;
+    border-radius: 50%;
+  }
+}

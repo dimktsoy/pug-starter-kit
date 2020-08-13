@@ -1,0 +1,16 @@
+.page-header {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  
+  /* Inner */
+
+  &__inner {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+}

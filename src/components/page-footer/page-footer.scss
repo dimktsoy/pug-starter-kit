@@ -1,0 +1,13 @@
+.page-footer {
+  background-color: #d2d6db;
+  padding: 1rem 0;
+
+  /* Inner */
+
+  &__inner {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+}

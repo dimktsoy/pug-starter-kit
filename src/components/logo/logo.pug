@@ -1,0 +1,5 @@
+mixin logo(props = {})
+  - const { link } = props;
+
+  a.logo(href=link)
+    img.logo__image(src=require('../components/logo/img/logo.jpg'), alt="logo", width="100", height="100")
