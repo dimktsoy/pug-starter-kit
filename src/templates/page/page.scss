@@ -1,0 +1,26 @@
+.page {
+
+  /* Inner */
+  
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Content */
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.875rem;
+    background-color: #eef0f1;
+  }
+
+  /* Footer Wrapper */
+
+  &__footer-wrapper {
+    flex-shrink: 0;
+  }
+}
