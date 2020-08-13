@@ -4,8 +4,8 @@
   "description": "Шаблон проекта для быстрого старта с webpack, pug, scss и jQuery",
   "private": true,
   "scripts": {
-    "start": "cross-env-shell NODE_ENV=development webpack-dev-server --config-register @babel/register --open --config \"./scripts/webpack/config/webpack.dev.js\"",
-    "build": "cross-env-shell NODE_ENV=production webpack --config-register @babel/register --config \"./scripts/webpack/config/webpack.prod.js\"",
+    "start": "cross-env-shell NODE_ENV=development webpack-dev-server --config-register @babel/register --open --config \"./webpack/config/webpack.dev.js\"",
+    "build": "cross-env-shell NODE_ENV=production webpack --config-register @babel/register --config \"./webpack/config/webpack.prod.js\"",
     "serve": "serve \"./dist\" -s"
   },
   "repository": {
