@@ -6,6 +6,8 @@
   "scripts": {
     "start": "cross-env-shell NODE_ENV=development webpack-dev-server --config-register @babel/register --open --config \"./webpack/config/webpack.dev.js\"",
     "build": "cross-env-shell NODE_ENV=production webpack --config-register @babel/register --config \"./webpack/config/webpack.prod.js\"",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "serve": "serve \"./dist\" -s"
   },
   "repository": {
@@ -40,6 +42,7 @@
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.3.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.10.0",
