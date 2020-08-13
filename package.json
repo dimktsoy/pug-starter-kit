@@ -1,10 +1,12 @@
 {
   "name": "pug-starter-kit",
   "version": "1.0.0",
-  "description": "Шаблон проекта для быстрого старта с webpack, pug и scss",
+  "description": "Шаблон проекта для быстрого старта с webpack, pug, scss и jQuery",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env-shell NODE_ENV=development webpack-dev-server --config-register @babel/register --open --config \"./scripts/webpack/config/webpack.dev.js\"",
+    "build": "cross-env-shell NODE_ENV=production webpack --config-register @babel/register --config \"./scripts/webpack/config/webpack.prod.js\"",
+    "serve": "serve \"./dist\" -s"
   },
   "repository": {
     "type": "git",
@@ -16,12 +18,46 @@
     "js",
     "webpack",
     "pug",
-    "scss"
+    "scss",
+    "jQuery"
   ],
   "author": "Dima Tsoy <dimktsoy@yahoo.com> (https://github.com/dimktsoy)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dimktsoy/pug-starter-kit/issues"
   },
-  "homepage": "https://github.com/dimktsoy/pug-starter-kit#readme"
+  "homepage": "https://github.com/dimktsoy/pug-starter-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "app-root-path": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.1",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "postcss-loader": "^3.0.0",
+    "pug": "2.0.4",
+    "pug-loader": "^2.4.0",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "serve": "^11.3.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  }
 }
