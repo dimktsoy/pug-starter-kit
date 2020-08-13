@@ -1,0 +1,12 @@
+extends ../templates/page/page
+include ../components/container/container
+
+block head
+  - const pageTitle = "Главная";
+  - const pageDescription = "Шаблон проекта для быстрого старта с webpack, pug и scss";
+  - const pageKeywords = "webpack, pug, scss";
+
+block content
+  +container({
+    message: 'Шаблон проекта для быстрого старта с webpack, pug, scss и jQuery'
+  })
