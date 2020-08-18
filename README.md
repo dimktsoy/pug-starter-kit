@@ -3,7 +3,7 @@
 Шаблон проекта для быстрого старта с webpack, pug, scss и jQuery
 
 ## Старт проекта:
-- Клонируйте репозиторий: `git clone https://github.com/dimktsoy/pug-starter-kit`
+- Клонируйте репозиторий: `git clone https://github.com/dimktsoy/pug-starter-kit.git`
 - Перейдите в папку с проектом `cd pug-starter-kit`
 - Установите зависимости: `yarn` или `yarn install`
 - Запустите проект: `yarn start`
